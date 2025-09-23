@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "921716222185",
+    "project_id": "collabflo-database",
+    "storage_bucket": "collabflo-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921716222185:android:5cac93b350c4787ba56878",
+        "android_client_info": {
+          "package_name": "com.collabflo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921716222185-mgrhehcb6utnfgvldhf1upmnst5udj75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.collabflo.app",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "921716222185-26kmrqnhramikclnnn3iopm7hk5mee4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEE54dzUuvzsMCwHSBiEj72fMlQ1nyvVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921716222185-26kmrqnhramikclnnn3iopm7hk5mee4e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "921716222185-6q750u4sakq1q50d0006lgubqgd9g15k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.collabflo.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
