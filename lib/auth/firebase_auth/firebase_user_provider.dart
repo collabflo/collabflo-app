@@ -5,8 +5,8 @@ import '../base_auth_user_provider.dart';
 
 export '../base_auth_user_provider.dart';
 
-class CollabflotestFirebaseUser extends BaseAuthUser {
-  CollabflotestFirebaseUser(this.user);
+class CollabfloFirebaseUser extends BaseAuthUser {
+  CollabfloFirebaseUser(this.user);
   User? user;
   bool get loggedIn => user != null;
 
@@ -59,17 +59,17 @@ class CollabflotestFirebaseUser extends BaseAuthUser {
   static BaseAuthUser fromUserCredential(UserCredential userCredential) =>
       fromFirebaseUser(userCredential.user);
   static BaseAuthUser fromFirebaseUser(User? user) =>
-      CollabflotestFirebaseUser(user);
+      CollabfloFirebaseUser(user);
 }
 
-Stream<BaseAuthUser> collabflotestFirebaseUserStream() => FirebaseAuth.instance
+Stream<BaseAuthUser> collabfloFirebaseUserStream() => FirebaseAuth.instance
         .authStateChanges()
         .debounce((user) => user == null && !loggedIn
             ? TimerStream(true, const Duration(seconds: 1))
             : Stream.value(user))
         .map<BaseAuthUser>(
       (user) {
-        currentUser = CollabflotestFirebaseUser(user);
+        currentUser = CollabfloFirebaseUser(user);
         return currentUser!;
       },
     );

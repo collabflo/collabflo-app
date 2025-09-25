@@ -303,7 +303,7 @@ class FirebaseAuthManager extends AuthManager
       final userCredential = await signInFunc();
       return userCredential == null
           ? null
-          : CollabflotestFirebaseUser.fromUserCredential(userCredential);
+          : CollabfloFirebaseUser.fromUserCredential(userCredential);
     } on FirebaseAuthException catch (e) {
       final errorMsg = switch (e.code) {
         'email-already-in-use' =>
